@@ -1,0 +1,17 @@
+.container{
+    margin: 10%;
+}
+.iconsection{
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+span{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+padding: 0.5rem;
+}
+
+
