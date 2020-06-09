@@ -1,0 +1,328 @@
+
+#double-room-book-rooms{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 75% 25%;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+#double-room{
+    float: left;
+}
+#book-rooms{
+    float: left;
+    
+}
+#form-book-rooms{
+    background-color: #FAFDFF;
+    padding: 10px 20px 60px 20px;
+}
+#top{
+    display: grid;
+    grid-template-columns: 88.7% 11.3%;
+}
+.sub-head{
+    margin-top: -17px;
+    font-size: small;
+}
+#imag{
+    width: 100%;
+    height: auto;
+}
+.date{
+    width: 98%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #FAFDFF;
+    outline: none;
+}
+.num{
+    width: 45.9%;
+    border: none;
+    background-color: #FAFDFF;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+#book-div{
+    text-align: center;
+}
+#book{
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FAFDFF;
+    border-radius: 10px;
+    border-width: 1px;
+    outline: none;
+}
+#book:hover{
+    background-color: black;
+    border-color: #FAFDFF;
+    color: #FAFDFF;
+}
+#book:active{
+    background-color: #FAFDFF;
+    border-color: black;
+    color: black;
+}
+#rooms-book-rooms{
+    margin-top: -15px;
+}
+.hidden{
+    display: none;
+}
+@media only screen and (max-width: 1243px) {
+    #top{
+        grid-template-columns: 87% 13%;
+    }
+}
+
+@media only screen and (max-width: 1102px) {
+    .hidden{
+        display: inline;
+    }
+    #top{
+        grid-template-columns: 83% 17%;
+    }
+    .num{
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 902px) {
+    #top{
+        grid-template-columns: 78% 17%;
+    }
+}
+
+@media only screen and (max-width: 733px) {
+    #double-room-book-rooms{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .num{
+        width: 45.9%;
+    }
+    #top{
+        grid-template-columns: 80% 20%;
+    }
+}
+@media only screen and (max-width: 733px) {
+    #top{
+        grid-template-columns: 75% 25%;
+    }
+    #text{
+        padding-top: 10px;
+        line-height: 15px;
+    }
+}
+@media only screen and (max-width: 558px) {
+    #top{
+        grid-template-columns: 70% 30%;
+    }
+}
+
+
+ 
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .more-images {
+       flex-wrap: wrap;
+       padding-bottom: 20px;
+    }
+ 
+    .more-images img {
+       padding-bottom: 20px;
+    }
+ 
+    [fifth-image] {
+       width: 196px;
+    }
+ 
+ }
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+ 
+    .more-images {
+       flex-wrap: wrap;
+    }
+ 
+    .more-images img {
+       margin-top: 20px; 
+    }
+ 
+    
+    [fifth-image] {
+       width: 196px;
+    }
+ }
+
+ @media screen and (max-width: 48rem) {
+    .iconsection {
+        margin-bottom: 3%;
+        margin-top: 3%;
+        width: 50%;
+    }
+    .roomfacility{
+        padding-left: 1rem;
+    }
+}
+ 
+ .more-images-container {
+    display: flex;
+    overflow-x: hidden;
+    margin-left: 58px; /*add a margin here*/
+ }
+ .more-images {
+    top: 887px;
+    display: flex;
+ }
+ 
+ .more-images img {
+    height: 140px;
+    padding-left: 20px;
+    width: 208px; /*Add a width here*/
+ }
+ 
+ .customer-review-section {
+    width: 325px; /*Add a width here*/
+    height: 465px;
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+ 
+ #customer-review-header {
+    font-size: 28px;
+    color: #333333;
+    font-weight: 500;
+ }
+ 
+ .review {
+    background: #FAFDFF;
+    height: 465px;
+    margin-top: 24px;
+ }
+ #customer-review {
+    width: 231px;
+    font-size: 14px;
+    line-height: 36px;
+    margin: 24px 0 0 26px;
+    padding-top: 56px;
+ }
+ 
+ #customer-img {
+    margin: 26px 0 0 26px;
+    width: 100px;
+    height: 65px;
+ }
+ 
+ #customer-name {
+    font-size: 18px;
+    margin: 50px 0 0 15px;
+    position: absolute;
+ }
+ 
+ .btn {
+    text-decoration: none;
+    margin-left: 15px;  
+    font-size: 2rem;
+    color: #000;
+    margin-top: 50px;
+ }
+
+.container{
+    margin: 10%;
+}
+.roomfacility{   
+    padding-left: 2rem;
+}
+.iconsection{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 25%;
+}
+
+span{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+padding: 0.5rem;
+}
+
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.room-facilities {
+    max-width: 980px;
+    margin-top: -230px;
+    padding-left: 20px;
+}.header {
+    font-size: smaller;
+}
+
+.services {
+    margin-top: 0px;
+    font-size: smaller;
+    margin-bottom: 100px;
+}
+
+.line {
+    margin-bottom: 50px;
+    margin-left: -16px;
+}
+
+.like {
+    font-size: large;
+    margin-bottom: 17px;
+}
+
+.elegant {
+    margin-top: 10px;
+}
+
+.personal {
+    margin-top: 10px;
+}
+
+.presidential {
+    margin-top: 10px;
+}
+
+.butto1 {
+    width: 71px;
+    height: 34px;
+    text-align-last: center;
+}
+
+.butto2 {
+    width: 71px;
+    height: 34px;
+    text-align-last: center;
+    padding-left: 25px;
+}
+
+.butto3 {
+    width: 75px;
+    height: 34px;
+    text-align-last: center;
+    text-align: center;
+    line-height: unset;
+}
+
+.you {
+    margin-bottom: 200px;
+    margin-left: 0px;
+    padding-left: 17px;
+}
