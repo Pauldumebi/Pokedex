@@ -186,11 +186,11 @@
  .more-images img {
     height: 140px;
     padding-left: 20px;
-    width: 208px; /*Add a width here*/
+    width: 183px; /*Add a width here*/
  }
  
  .customer-review-section {
-    width: 325px; /*Add a width here*/
+    width: 272px; /*Add a width here*/
     height: 465px;
     margin-left: 20px;
     margin-top: 20px;
@@ -216,8 +216,8 @@
  }
  
  #customer-img {
-    margin: 26px 0 0 26px;
-    width: 100px;
+    margin: 26px 0 0 10px;
+    width: 80px;
     height: 65px;
  }
  
