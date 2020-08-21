@@ -9,11 +9,30 @@
 }
 body {
    background: #F0F5FC !important;
-   height: 100vh;
+}
+.fa-moon-o {
+   font-size: 40px;
+   position: absolute;
+   right: 0;
+   color: white;
+}
+.dark-mode {
+   background-color: #001232 !important;
+   color: white;
 }
 .logo img {
-   width: 12.5rem;
+   width: 5rem;
    margin-top: 3rem;
+}
+
+.logo-name {
+   font-size: 2rem;
+   margin-top: 4rem;
+   position: absolute;
+   margin: -4rem 0 0 5.5rem;
+}
+.logo a:hover {
+   text-decoration: none;
 }
 .header {
    margin-top: 5rem; 
@@ -59,7 +78,7 @@ body {
 .fa-envelope {
    font-size: 1.5rem;
    color: white;
-   margin-left: 1.5rem;
+   margin: 0.3rem 0 0 1.6rem;
 }
 .fa-envelope:hover {
    cursor: pointer;
@@ -69,13 +88,12 @@ body {
    border: none;
 }
 .background-img img {
-   background-image: url(Images/Group-1.png);
    position: absolute;
    margin-left: 30rem ;
    width: 45rem;
    height: 40rem;
 }
- .blue-ball img{
+.blue-ball img{
    width: 50px;
    height: 50px;
    position: absolute;
@@ -110,9 +128,9 @@ body {
    height: 10px;
    position: absolute;
    margin: 15rem 0 0 33rem;
-} */
+} 
 
-hr {
+#line {
    color:#3F51B5 !important;
    background-color:#3F51B5 !important;
    width: 5% !important;
@@ -129,6 +147,9 @@ h4 {
    letter-spacing: 0.1em;
    padding-top: 10rem;
 }
+.at-a-glance {
+   padding-top: 3rem;
+}
 .paragraph {
    text-align: center;
    padding: 2rem 18rem;
@@ -141,18 +162,17 @@ h4 {
    height: 300px;
    border-radius: 50px;
    margin-top: 2rem;
+   background: rgba(63, 81, 181, 0.2);
 }
 .card img {
    width: 80px;
    height: 120px;
    padding-top: 3rem;
    padding-left: 1rem;
-   background: white;
-}
+} 
 .card p {
-   padding-left: 1rem;
+   padding: 0 1rem;
    padding-top: 1rem;
-   background: white;
    border-radius: 50px;
 }
 
@@ -167,7 +187,7 @@ h4 {
 }
 .splash img {
    width: 400px;
-   height: 500px;
+   height: auto;
    padding-right: 4rem !important;
 }
 h5 {
@@ -178,8 +198,7 @@ h5 {
    margin-bottom: 3rem;
    height: 10rem;
    display: grid;
-   grid-template-columns: 30% 70%; 
-   grid-column-gap: 1rem;
+   grid-template-columns: 30% 70%;
 }
 .Email-group {
    display: grid;
@@ -204,12 +223,17 @@ h5 {
 .App-at-a-glance {
    margin-bottom: 15rem;
 }
-
+.fa-arrows {
+   color: white;
+   background: #3F51B5;
+   border-radius: 50%;
+   padding: 0.5rem;
+}
 .image-wrapper {
    width: 100%;
-   /* position: absolute; */
-   top: 45%;
-   transform: translateY(10%);
+   position: absolute;
+   /* top: 45%; */
+   transform: translateY(-100%);
    text-align: center;
    color: white;
 }
@@ -234,14 +258,133 @@ h5 {
  .fa-social:hover {
    opacity: 0.7;
 }
+@media screen and (max-width: 1024px) {
+   .background-img  {
+      margin-left: -4rem;
+   }
+   .background-img img {
+      width: 31rem;
+  }
+  .blue-ball img{
+      width: 50px;
+      height: 50px;
+      margin: 9rem 0 0 32rem;
+   }
+   .white-ball img {
+      width: 10px;
+      height: 10px;
+      margin: 24rem 0 0 55rem;
+   }
+   .white-ball-2 img {
+      width: 10px;
+      height: 10px;
+      margin: 34rem 0 0 55rem;
+   }
+   .pink-ball img {
+      width: 18px;
+      height: 18px;
+      margin: 7rem 0 0 38rem;
+   }
+   .pink-ball-2 img {
+      width: 18px;
+      height: 18px;
+      margin: 29rem 0 0 58rem;
+   }
+   .deep-blue img {
+      width: 10px;
+      height: 10px;
+   }
+   .prototype img {
+      width: 100%;
+      height: auto;
+   }
+   .input-field {
+      width: 40%;
+   }
+   .paragraph {
+      padding: 0rem;
+   }
 
- @media (max-width: 576px) { 
+   .splash img {
+      width: 300px;
+      padding-right: 0 !important;
+      margin: 3rem 0 0 -2rem;
+   }
+   .app-features-paragraphs {
+      grid-column-gap: 1rem;
+   }
+   .app-features-paragraphs p {
+      width: 9rem;
+      height: auto;
+   }
+   .app-paragraph-2 {
+      grid-template-columns: 60% 40%;
+   }
+   .App-at-a-glance img {
+      width: 260px;
+      height: 450px;
+   }
+   
+}
+   
+@media screen and (max-width: 950px) {
+   .fa-moon-o {
+      margin-left: 30rem;
+   }
+   .input-field {
+      width: 50%;
+   }
+   .paragraph {
+      padding:0;
+  }
+  .prototype img {
+   width: 100%;
+   height: auto;
+   }
+   .app-features-paragraphs {
+      grid-template-columns: 45% 55%; 
+      height: auto;
+     
+   }
+   .app-features-paragraphs p {
+      font-size: 16px;
+   }
+   .splash img {
+      width: 300px;
+      height: 500px;
+      margin: 5rem 0 0 -1.8rem;
+  }
+  .paragraph, .header-text, .get-notified p, .card p {
+     font-size: 16px;
+  }
+  .header h1 {
+     font-size: 36px;
+  }
+  h4 {
+     font-size: 20px !important;
+  }
+  .background-img, 
+   .blue-ball img, 
+   .white-ball img, 
+   .white-ball-2 img, 
+   .pink-ball img, 
+   .pink-ball-2 img,
+   .deep-blue img {
+      display: none;
+   }
+}
+   
+
+@media screen and (max-width: 650px) {
    .header h1 {
       font-size: 32px !important;
    }      
+   .fa-moon-o {
+      color: #3F51B5;
+   }
    .header-text {
-      width: 300px;
-      font-size: 14px;
+      width: unset;
+      font-size: 4vw;
    }
    .input-field {
       width: 65%;
@@ -267,14 +410,18 @@ h5 {
       height: 300px;
       margin: 3rem auto;
    }
-   .prototype-img {
-      width: 19rem !important;
+   .prototype img {
+      width: 100%;
+      height: auto;
    }
    .icons p {
-      width: 180px;
+      width: unset;
    }
    .splash img {
-      margin-left: -2.5rem;
+     width: 100%;
+     height: auto;
+     text-align: center;
+     margin: 0 0 4rem 1.8rem;
    }
    .icons img {
       margin-right: 2rem;
@@ -289,7 +436,78 @@ h5 {
       width: 10rem;
    }
    .App-at-a-glance img {
-      margin-left: -1rem;
+     width: 100%;
+     height: auto;
+   }
+   .footer {
+      overflow-x: hidden;
+   }
+}
+
+@media screen and (max-width: 480px) {
+
+   .header h1 {
+      font-size: 32px !important;
+   }      
+   .fa-moon-o {
+      color: #3F51B5;
+   }
+   .header-text {
+      width: unset;
+      font-size: 4vw;
+   }
+   .input-field {
+      width: 65%;
+   }
+   .background-img, 
+   .blue-ball img, 
+   .white-ball img, 
+   .white-ball-2 img, 
+   .pink-ball img, 
+   .pink-ball-2 img,
+   .deep-blue img {
+      display: none;
+   }
+   .paragraph {
+      padding: 1rem;
+   }
+   h4 {
+      padding-top: 5rem;
+      font-size: 18px !important;
+   }
+   .card-deck .card {
+      width: 260px;
+      height: 300px;
+      margin: 3rem auto;
+   }
+   .prototype img {
+      width: 100%;
+      height: auto;
+   }
+   .icons p {
+      width: unset;
+   }
+   .splash img {
+     width: 100%;
+     height: auto;
+     text-align: center;
+     margin: 0 0 4rem 1.8rem;
+   }
+   .icons img {
+      margin-right: 2rem;
+   }
+   .app-paragraph-2 img {
+      margin-right: none;
+   }
+   .app-paragraph-2 {
+      grid-template-columns: 60% 40%; 
+   }
+   #third-col-header {
+      width: 10rem;
+   }
+   .App-at-a-glance img {
+     width: 100%;
+     height: auto;
    }
    .footer {
       overflow-x: hidden;

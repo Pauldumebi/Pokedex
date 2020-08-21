@@ -1,0 +1,63 @@
+2020-03-13 20:04:10,617: ERROR	flask.app:	Exception when checking for update
+Traceback (most recent call last):
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 966, in send
+    self.connect()
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 1406, in connect
+    super().connect()
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\http\client.py", line 938, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\PostgreSQL\10\pgAdmin 4\web\pgadmin\browser\__init__.py", line 559, in index
+    response = urlreq.urlopen(url, data, 5)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:/Program Files/PostgreSQL/10/pgAdmin 4/venv/Lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+2020-03-13 20:06:03,405: ERROR	flask.app:	Could not connect to server(#2) - 'PostgreSQL 10'.
+Error: FATAL:  password authentication failed for user "postgres"
+
+2020-03-13 20:14:38,800: ERROR	flask.app:	Failed to execute query (execute_async) for the server #2 - CONN:630014(Query-id: 7887769):
+Error Message:ERROR:  relation "songs" does not exist
+LINE 1: SELECT * FROM SONGS
+                      ^
+SQL state: 42P01
+Character: 15
+2020-03-13 20:15:11,661: ERROR	flask.app:	Failed to execute query (execute_async) for the server #2 - CONN:630014(Query-id: 3022349):
+Error Message:ERROR:  relation "songs" does not exist
+LINE 1: SELECT * FROM Songs
+                      ^
+SQL state: 42P01
+Character: 15
+2020-03-13 20:15:44,733: ERROR	flask.app:	Failed to execute query (execute_async) for the server #2 - CONN:630014(Query-id: 3758507):
+Error Message:ERROR:  relation "songs" does not exist
+LINE 1: SELECT Title FROM Songs
+                          ^
+SQL state: 42P01
+Character: 19

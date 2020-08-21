@@ -1,0 +1,45 @@
+{
+	"name": "jorgythemes",
+	"displayName": "Jorgy Themes",
+	"description": "Best dark themes.",
+	"version": "0.0.3",
+	"license": "MIT",
+	"publisher": "Jorgy",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"repository": {
+		"url": "https://github.com/marjorg/VSCode-Theme.git",
+		"type": "git"
+	},
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=jorgy.jorgythemes",
+	"bugs": {
+		"url": "https://github.com/marjorg/VSCode-Theme/issues"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Jorgy Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark-color-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"build-patch": "npm version patch && vsce package",
+		"build-minor": "npm version minor && vsce package",
+		"build-major": "npm version major && vsce package",
+		"publish": "vsce publish && git tag"
+	},
+	"devDependencies": {
+		"vsce": "^1.56.0"
+	},
+	"__metadata": {
+		"id": "4d0d3b0f-aaad-4129-9f86-d14ea17cbccd",
+		"publisherId": "1730ef2a-9672-403d-a1c7-c5b6f1c77d0a",
+		"publisherDisplayName": "Jorgy"
+	}
+}

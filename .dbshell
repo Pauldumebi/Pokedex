@@ -1,0 +1,5 @@
+show db
+help
+show dbs
+use songsdb
+exit()

@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Chukwurah Paul
+	email = paulchukwurah7@gmail.com
+[gui]
+	recentrepo = C:/Users/PAUL/Dumebi/user
