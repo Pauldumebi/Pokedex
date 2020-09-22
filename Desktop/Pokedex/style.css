@@ -1,0 +1,69 @@
+body {
+   background:  #EFEFBB;
+   background: -webkit-linear-gradient(to right, #D4D3DD,  #EFEFBB);
+   background: linear-gradient(to right, #D4D3DD,  #EFEFBB);
+   padding: 20px 50px;
+}
+h1 {
+   letter-spacing: 3px;
+   text-align: center;
+}
+input[type=text] {
+   padding: 10px;
+   border: none;
+   font-size: 17px;
+}
+.search {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20px 0 50px;
+}
+.search:focus {
+   outline: none;
+}
+.card {
+   max-width: 1200px;
+   list-style-type: none;
+   padding: 40px;
+   background-color: #eee;
+   text-align: center;
+   border-radius: 20px;
+   height: 230px;
+}
+.card-img {
+   background-color: white;
+   border-radius: 50%;
+}
+.card-img img {
+   margin-top: 20px;
+   max-width: 90%;
+} 
+#pokedex {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+   grid-gap: 20px;
+   margin-left: -40px;
+}
+.card-title {
+   padding: 20px 0;
+}
+.btn {
+   width: 50px;
+   height: 40px;
+   border: none;
+   margin: 5px;
+}
+
+#buttons {
+   margin: 50px auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+.btn:hover, .btn:active {
+   background-color: rgb(6, 6, 73);
+   color: whitesmoke;
+}
+
