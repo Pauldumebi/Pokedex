@@ -41,7 +41,7 @@ input[type=text] {
    margin-top: 20px;
    max-width: 90%;
 } 
-#pokemon {
+#pokimon {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
    grid-gap: 20px;
@@ -72,6 +72,7 @@ input[type=text] {
    border: none;
    border-radius: 5px;
    color: #808080;
+   background: white;
 }
 .btn:hover, .btn:active {
    background-color:#24a0ed;
