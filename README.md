@@ -1,1 +1,1 @@
-live link: Pokimon.netlify.app
+live link: https://Pokimon.netlify.app
