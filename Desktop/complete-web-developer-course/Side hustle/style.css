@@ -1,0 +1,86 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Commissioner', sans-serif;
+}
+body {
+   background-image: url(maldives_20200526_075134_0.jpg);
+   font-size: 18px;
+   overflow: hidden;
+}
+h1 {
+   padding-bottom: 1rem;
+}
+.grid {
+   display: grid;
+   grid-template-columns: 65% 35%; 
+   margin: 2.5% 10%;
+}
+/*Get Started*/
+.get-started {
+   background-color: white;
+   padding: 3rem;
+   border-top-left-radius: .5rem;
+   border-bottom-left-radius: .5rem;
+}
+li {
+   list-style-type: none;
+   padding: 1rem;
+}
+input {
+   height: 2rem;
+   font-size: 18px;
+   padding: 1rem;
+   width: 17rem;
+}
+.get-started-form {
+   display: flex;
+}
+#age {
+   width: 5rem;
+}
+#date {
+   width: 13rem;
+}
+#nationality {
+   width: 10rem;
+}
+button {
+   margin-top: 2rem;
+   width: 16.5rem;
+   height: 3rem;
+   background-color:#E13B63;
+   border: none;
+   color: white;
+   font-size: 18px;
+   cursor: pointer;
+}
+button:hover {
+   background-color:#fc1d51;
+}
+.button-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.gender select {
+   width: 7rem;
+   height: 2.2rem;
+   font-size: 18px;
+}
+/*Sign-in*/ 
+.Sign-in li {
+   padding: .5rem;
+   padding-bottom: 1rem;
+}
+.Sign-in {
+   background-color: #00112A;
+   color: white;
+   padding: 3rem;
+   border-top-right-radius: .5rem;
+   border-bottom-right-radius: .5rem;
+}
+.error {
+   border-color: red;
+}

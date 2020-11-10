@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
+   <title>Register/SignUp</title>
+</head>
+<body>
+   <div class="grid">
+      <div class="get-started">
+         <h1>Get Started</h1>
+         <form action="/action_page.php" method="post">
+            <div class="get-started-form">
+               <li>
+                  <label for="name">First Name</label>
+                  <input type="text" name="firstName" id="firstName" required>
+               </li>
+               <li>
+                  <label for="name">Last Name</label>
+                  <input type="text" name="lastName" id="lastName" required>
+               </li>
+            </div>
+            <div class="get-started-form">
+               <li>
+                  <label for="age">Age</label><br>
+                  <input type="text" name="age" id="age" required>
+               </li>
+               <li>
+                  <label for="nationality">Nationality</label><br>
+                  <input type="text" id="nationality" required>
+               </li>
+               <li>
+                  <label for="state-of-origin">State of Origin</label><br>
+                  <select name="states" id="states">
+                     <option value="1"></option>
+                  </select>
+               </li>
+            </div>
+            <div class="get-started-form">
+               <li>
+                  <label for="date-of-birth">Date of birth</label><br>
+                  <input type="date" id="date" required>
+               </li>
+               <li class="gender">
+                  <label for="gender">Gender</label><br>
+                  <select name="gender" id="gender">
+                     <option value="1">Male</option>
+                     <option value="1">Female</option>
+                     <option value="1">Others</option>
+                  </select>
+               </li>
+            </div>
+            <div class="get-started-form">
+               <li>
+                  <label for="username">Username</label><br>
+                  <input type="text" id="username" required> 
+               </li>
+               <li>
+                  <label for="password">Password</label><br>
+                  <input type="password" placeholder="Minimum of 8 characters" id="password" required>
+               </li>
+            </div>
+            <div class="button-div">
+                <button>Register</button>
+            </div>
+         </form>
+      </div>
+      <div class="Sign-in">
+         <h1>Sign In</h1> 
+         <form action="/action_page.php" method="post">
+            <li>
+               <label for="username">Username</label>
+               <input type="text" id="signin-username" required>
+            </li>
+            <li>
+               <label for="password">Password</label>
+               <input type="password" id="signin-password" required>
+            </li>
+            <div class="button-div">
+               <button>SignIn</button>
+           </div>
+         </form>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
